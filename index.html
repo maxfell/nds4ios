@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>nds4ios by InfiniDev</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>nds4ios</h1>
+        <h2>An Nintendo DS ROM emulator for iOS</h2>
+        <a href="https://github.com/InfiniDev/nds4ios" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a name="nds4ios---ios-5--7" class="anchor" href="#nds4ios---ios-5--7"><span class="octicon octicon-link"></span></a>nds4ios - iOS 5 ~ 7</h1>
+
+<h3>
+<a name="this-is-not-finished-software-do-not-open-issues-complaining-about-games-being-slow-crashing-on-the-ipod-touch-4-and-below-and-crashing-on-the-iphone-3gs-and-below-we-know-about-it-already" class="anchor" href="#this-is-not-finished-software-do-not-open-issues-complaining-about-games-being-slow-crashing-on-the-ipod-touch-4-and-below-and-crashing-on-the-iphone-3gs-and-below-we-know-about-it-already"><span class="octicon octicon-link"></span></a>This is not finished software. Do not open issues complaining about games being slow, crashing on the iPod Touch 4 and below, and crashing on the iPhone 3GS and below; we know about it already.</h3>
+
+<h3>
+<a name="important-when-opening-issues-please-state-your-device-ios-version-and-whether-you-are-jailbroken-or-not-please-also-tell-us-where-you-downloaded-the-app-from" class="anchor" href="#important-when-opening-issues-please-state-your-device-ios-version-and-whether-you-are-jailbroken-or-not-please-also-tell-us-where-you-downloaded-the-app-from"><span class="octicon octicon-link"></span></a>IMPORTANT: WHEN OPENING ISSUES, PLEASE STATE YOUR DEVICE, iOS VERSION, AND WHETHER YOU ARE JAILBROKEN OR NOT. PLEASE ALSO TELL US WHERE YOU DOWNLOADED THE APP FROM.</h3>
+
+<h3>
+<a name="please-do-not-distribute-this-by-code-signing-it-uploading-then-telling-others-to-download-it-from-you-we-provide-an-official-way-to-distribute-already-this-is-a-fair-warning" class="anchor" href="#please-do-not-distribute-this-by-code-signing-it-uploading-then-telling-others-to-download-it-from-you-we-provide-an-official-way-to-distribute-already-this-is-a-fair-warning"><span class="octicon octicon-link"></span></a>PLEASE DO NOT DISTRIBUTE THIS BY CODE SIGNING IT, UPLOADING, THEN TELLING OTHERS TO DOWNLOAD IT FROM YOU. WE PROVIDE AN OFFICIAL WAY TO DISTRIBUTE ALREADY. THIS IS A FAIR WARNING.</h3>
+
+<p>nds4ios is a port of nds4droid to iOS, which is based on DeSmuME.</p>
+
+<p><a href="http://nds4ios.angelxwind.net/">http://nds4ios.angelxwind.net/</a></p>
+
+<p><a href="http://desmume.org/">DeSmuME</a> </p>
+
+<p><a href="http://jeffq.com/blog/nds4droid/">nds4droid</a></p>
+
+<p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MCAFUKL3CM8QQ"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="Donate"></a></p>
+
+<p>We all work hard to make this into software that users will enjoy and love. If you enjoy this software, please consider making a donation to help us create and provide better things.</p>
+
+<h2>
+<a name="install-instructions" class="anchor" href="#install-instructions"><span class="octicon octicon-link"></span></a>Install Instructions</h2>
+
+<h3>
+<a name="option-1-download-it-from-axwnet" class="anchor" href="#option-1-download-it-from-axwnet"><span class="octicon octicon-link"></span></a>Option 1: Download it from aXwNET</h3>
+
+<p>If you're jailbroken, add the following source in Cydia: <a href="http://cydia.angelxwind.net/">http://cydia.angelxwind.net/</a></p>
+
+<p>If you're NOT jailbroken, then you're going to have to make some compromises. Check the following link for details: <a href="http://weareflame.co/nds4ios/">http://weareflame.co/nds4ios/</a></p>
+
+<h3>
+<a name="option-2-compile-it-yourself" class="anchor" href="#option-2-compile-it-yourself"><span class="octicon octicon-link"></span></a>Option 2: Compile it yourself</h3>
+
+<p>IMPORTANT: Make sure your working directory is devoid of spaces. Otherwise, bad things will happen.</p>
+
+<ol>
+<li><p>Open a Terminal instance and go to your working directory.</p></li>
+<li><p>Do
+<code>git clone <a href="https://github.com/InfiniDev/nds4ios.git">https://github.com/InfiniDev/nds4ios.git</a></code></p></li>
+<li><p>then
+Navigate to the "nds4ios" folder in your working directory.</p></li>
+<li><p>Open "nds4ios.xcodeproj", connect your device, select it on Xcode and click the "Run" button (or Command + R). Don't build it for the iOS Simulator. IMPORTANT: Make sure you change your running scheme to Release first. Otherwise you will get errors on compile!</p></li>
+</ol><ul>
+<li>A note on Dropbox integration if you're building it yourself: Due to Dropbox's request, we cannot provide the App Key and App Secret in the source code. You must either set one up youself or obtain it from us. Official releases from us will use the official key. We will try to make this easier to handle in the future.</li>
+</ul><h4>
+<a name="option-2a" class="anchor" href="#option-2a"><span class="octicon octicon-link"></span></a>Option 2a</h4>
+
+<ol>
+<li>Alternatively, run
+<code>xcodebuild -configuration Release</code>
+from Terminal and then copy the resulting *.app bundle to your /Applications directory on your device.</li>
+</ol><h2>
+<a name="how-to-load-roms" class="anchor" href="#how-to-load-roms"><span class="octicon octicon-link"></span></a>How To Load ROMs</h2>
+
+<h5>
+<a name="since-this-apparently-needs-explaining" class="anchor" href="#since-this-apparently-needs-explaining"><span class="octicon octicon-link"></span></a>Since this apparently needs explaining</h5>
+
+<h3>
+<a name="option-1-preferred-option" class="anchor" href="#option-1-preferred-option"><span class="octicon octicon-link"></span></a>Option 1 (Preferred Option)</h3>
+
+<ol>
+<li>In nds4ios, tap on the button in the upper right hand corner.</li>
+<li>Download a ROM package of a ROM that you own the actual game cartridge for from a site such as CoolROM. It may come in a zip file. You do not have to have any sort of download manager for this, Safari will download zip files.</li>
+<li>Tap the "Open in..." button in the top left hand corner, and select nds4ios.</li>
+<li>nds4ios will automatically unzip the file, delete the readme, find the .nds file, and refresh itself. Your ROM should show up in the list. Magic!</li>
+</ol><h3>
+<a name="option-2" class="anchor" href="#option-2"><span class="octicon octicon-link"></span></a>Option 2</h3>
+
+<ol>
+<li>Plug your device into your computer and launch iTunes.</li>
+<li>Go to your iDevice's info page, then the apps tab.</li>
+<li>drag and drop .nds files that you have (preferably ones you legally own the actual game cartridge for) into the iTunes file sharing box for nds4ios.</li>
+<li>Kill nds4ios from the app switcher if it's backgrounded, and launch it again to see changes.</li>
+</ol><h3>
+<a name="option-3" class="anchor" href="#option-3"><span class="octicon octicon-link"></span></a>Option 3</h3>
+
+<ol>
+<li>If you're jailbroken, grab one of the many download tweaks available for Mobile Safari or Chrome for iOS, or grab one of the many web browsers available with download managers built in, such as <a href="https://itunes.apple.com/us/app/cobium-simple-browsing/id502426780?mt=8">Cobium</a> (This is totally not a shameless plug).</li>
+<li>With the new browser or tweak, download a rom, preferably one you own the actual cartridge for.</li>
+<li>Using iFile or similar too, move the .nds file to the nds4ios directory, into the documents folder.</li>
+<li>Kill nds4ios from the app switcher if it's backgrounded, and launch it again to see changes.</li>
+</ol><h2>
+<a name="to-do" class="anchor" href="#to-do"><span class="octicon octicon-link"></span></a>To-do</h2>
+
+<h6>
+<a name="well-get-to-these-really" class="anchor" href="#well-get-to-these-really"><span class="octicon octicon-link"></span></a>We'll get to these, really!</h6>
+
+<ul>
+<li>JIT/Dynarec (very hard to achieve this using the clang compiler, in progress)</li>
+<li>OpenGL ES rendering</li>
+<li>Fix loading game saves on some games</li>
+<li>Ability to set the folder the rom chooser reads from</li>
+<li>Native iPad UI (in progress)</li>
+<li>Add more localizations (currently have: English, Traditional Chinese, Simplified Chinese, Spanish, French, Japanese)</li>
+<li>Much more.</li>
+</ul><h2>
+<a name="contributors" class="anchor" href="#contributors"><span class="octicon octicon-link"></span></a>Contributors</h2>
+
+<h6>
+<a name="we-stand-on-the-shoulders-of-these-people" class="anchor" href="#we-stand-on-the-shoulders-of-these-people"><span class="octicon octicon-link"></span></a>We stand on the shoulders of these people.</h6>
+
+<ul>
+<li><a href="http://desmume.org/">The DeSmuME developers</a></li>
+<li><a href="http://jeffq.com/blog/nds4droid/">Jeffrey Quesnelle (jeffq), the developer of nds4droid</a></li>
+<li><a href="http://rock88dev.blogspot.com/">rock88</a></li>
+<li><a href="http://angelxwind.net/">Karen Tsai (angelXwind)</a></li>
+<li><a href="http://brian.weareflame.co/">Brian Tung (inb4ohnoes)</a></li>
+<li><a href="http://twitter.com/maczydeco">Jesús A. Álvarez (maczydeco)</a></li>
+<li><a href="http://github.com/w-ms/">W.MS</a></li>
+<li><a href="https://github.com/rileytestut">Riley Testut (rileytestut)</a></li>
+<li><a href="http://dchavez.net">David Chavez (dchavezlive)</a></li>
+<li><a href="https://twitter.com/Malvix_">Michael Zhang (Malvix_)</a></li>
+<li><a href="https://twitter.com/vanillastar67">Angela Tsai (vanillastar67)</a></li>
+</ul>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/InfiniDev/nds4ios/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/InfiniDev/nds4ios/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/InfiniDev/nds4ios"></a> is maintained by <a href="https://github.com/InfiniDev">InfiniDev</a>.</p>
+
+          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
